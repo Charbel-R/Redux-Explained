@@ -7,8 +7,7 @@ import './App.css'
 
 function App() {
   const dispatch = useDispatch()
-  const count = useSelector((state) => state.counter.count)
-
+  const { count } = useSelector((state) => state.counter)
 
   return (
     <>
@@ -19,7 +18,7 @@ function App() {
           incement
         </button>
         <button onClick={() => {dispatch(decrement())}}>decrement</button>
-      
+        
       </div> 
     </>
   )
