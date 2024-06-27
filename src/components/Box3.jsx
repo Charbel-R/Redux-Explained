@@ -1,4 +1,5 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
+
 import Box4 from './Box4'
 
 export default function Box3(props) {

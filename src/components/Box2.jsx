@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 
 import Box3 from './Box3'
 
