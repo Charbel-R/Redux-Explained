@@ -15,15 +15,14 @@ function App() {
 
   return (
     <>
-    <Box1 count={count} user={user}/>
-      <h1>{count}</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           incement
         </button>
+        <h1>{count}</h1>
         <button onClick={() => setCount((count) => count - 1)}>decrement</button>
-      
       </div> 
+      <Box1 count={count} user={user}/>
     </>
   )
 }
