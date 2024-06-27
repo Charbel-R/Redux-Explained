@@ -1,8 +1,13 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Prop drilling 
+- Prop drilling is a technique used to pass data as props from parent
+component to child components.
 
-Currently, two official plugins are available:
+- As the component tree grows deeper, data needs to be passed through many components.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Redux/toolkit 
+- Redux Toolkit is a simplified wrapper library built on top of Redux.
+- It provides tools for managing application state in a centralized store.
+- Components can connect to the store to access and update state data.
+- This eliminates the need for prop drilling and improves code maintainability.
+
