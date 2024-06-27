@@ -11,17 +11,16 @@ function App() {
 
   return (
     <>
-    <Box1 />
-      <h1>{count}</h1>
       <div className="card">
         <button onClick={() => {dispatch(increment())}}>
           incement 
         </button>
+        <h1>{count}</h1>
         <button onClick={() => {dispatch(decrement())}}>
           decrement
         </button>
-        
       </div> 
+      <Box1 />
     </>
   )
 }
