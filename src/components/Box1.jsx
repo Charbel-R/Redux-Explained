@@ -9,9 +9,8 @@ export default function Box1(props) {
 
   return (
     <div className='box'>
-      <h1>Box 1</h1>
-      <p> First Child component </p>
-      <h2> Hello {name} </h2>
+      <h2>Box 1 - <span>1st child component</span></h2>
+      <h3> Hello {name} </h3>
       <div>The count is {count}</div>
       <Box2 user={props.user} count={props.count}/>
     </div>
