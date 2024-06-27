@@ -1,27 +1,24 @@
-import { useState } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { increment, decrement } from './store/slices/counterSlice'
 
 import Box1 from './components/Box1'
 import './App.css'
 
 
 function App() {
-  
-  const [count, setCount] = useState(0)
+  const dispatch = useDispatch()
+  const count = useSelector((state) => state.counter.count)
 
-  const user = {
-    name: 'John',
-    age: 25
-  }
 
   return (
     <>
-    <Box1 count={count} user={user}/>
+    <Box1 />
       <h1>{count}</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <button onClick={() => {dispatch(increment())}}>
           incement
         </button>
-        <button onClick={() => setCount((count) => count - 1)}>decrement</button>
+        <button onClick={() => {dispatch(decrement())}}>decrement</button>
       
       </div> 
     </>
