@@ -8,9 +8,8 @@ export default function Box1() {
 
   return (
     <div className='box'>
-      <h1>Box 1</h1>
-      <p> First Child component </p>
-      <h2> Hello {user.name} </h2>
+      <h2>Box 1 - <span>1st child component</span></h2>
+      <h3> Hello {user.name} </h3>
       <div>The count is {count}</div>
       <Box2 />
     </div>

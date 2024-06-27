@@ -7,7 +7,7 @@ export default function Box2() {
   
   return (
     <div className='box'>
-      <h2>Box 2 - <span>Second Child component </span></h2>
+      <h2>Box 2 - <span>2nd Child component </span></h2>
       <h3> You are {user.age} years old </h3>
       <Box3  />
     </div>
