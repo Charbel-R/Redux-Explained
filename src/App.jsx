@@ -6,7 +6,9 @@ import './App.css'
 
 
 function App() {
+  
   const dispatch = useDispatch()
+
   const { count } = useSelector((state) => state.counter)
 
   return (
